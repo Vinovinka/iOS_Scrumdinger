@@ -1,10 +1,3 @@
-//
-//  Theme.swift
-//  Scrumdinger
-//
-//  Created by Виктория Виноградова on 10.01.2023.
-//
-
 import SwiftUI
 
 enum Theme: String {
