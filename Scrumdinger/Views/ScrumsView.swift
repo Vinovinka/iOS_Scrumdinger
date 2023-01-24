@@ -22,7 +22,7 @@ struct ScrumsView: View {
             }) {
                 Image(systemName: "plus")
             }
-            .accessibilityLabel("New scrum")
+            .accessibilityLabel("New Scrum")
         }
         .sheet(isPresented: $isPresentingNewScrumView) {
             NavigationView {
@@ -50,8 +50,9 @@ struct ScrumsView: View {
 
 struct ScrumsView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationStack {
+        NavigationView {
             ScrumsView(scrums: .constant(DailyScrum.sampleData))
         }
     }
 }
+
