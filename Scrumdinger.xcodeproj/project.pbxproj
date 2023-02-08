@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E2235BD9299223E500B06019 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2235BD8299223E500B06019 /* ErrorWrapper.swift */; };
+		E2235BDB2992272000B06019 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2235BDA2992272000B06019 /* ErrorView.swift */; };
 		E223F933296C04D700B4CEB7 /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223F932296C04D700B4CEB7 /* ScrumdingerApp.swift */; };
 		E223F935296C04D700B4CEB7 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223F934296C04D700B4CEB7 /* MeetingView.swift */; };
 		E223F937296C04D900B4CEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E223F936296C04D900B4CEB7 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		E2235BD8299223E500B06019 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		E2235BDA2992272000B06019 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		E223F92F296C04D700B4CEB7 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E223F932296C04D700B4CEB7 /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		E223F934296C04D700B4CEB7 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				E2C7C7A32976CFE600EB9B84 /* ThemePicker.swift */,
 				E2C7C7A5297A795D00EB9B84 /* MeetingHeaderView.swift */,
 				E2C7C7AB297AB36200EB9B84 /* MeetingFooterView.swift */,
+				E2235BDA2992272000B06019 /* ErrorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				E223F942296D5FED00B4CEB7 /* Theme.swift in Sources */,
 				E2BD04DB296EFD050071D334 /* ScrumsView.swift in Sources */,
 				E223F935296C04D700B4CEB7 /* MeetingView.swift in Sources */,
+				E2235BDB2992272000B06019 /* ErrorView.swift in Sources */,
 				E223F933296C04D700B4CEB7 /* ScrumdingerApp.swift in Sources */,
 				E2C7C7A22976CC2C00EB9B84 /* ThemeView.swift in Sources */,
 				E223F946296D960C00B4CEB7 /* CardView.swift in Sources */,
