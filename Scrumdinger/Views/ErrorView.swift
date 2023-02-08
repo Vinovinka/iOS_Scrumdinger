@@ -16,9 +16,14 @@ struct ErrorView: View {
                 .padding(.bottom)
             Text(errorWrapper.error.localizedDescription)
                 .font(.headline)
+            Text(errorWrapper.guidance)
+                .font(.caption)
+                .padding(.top)
             Spacer()
         }
         .padding()
+        .background(.ultraThinMaterial)
+        .cornerRadius(16)
     }
 }
 
