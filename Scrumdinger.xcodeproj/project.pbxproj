@@ -29,6 +29,7 @@
 		E2C7C7AE297AB75600EB9B84 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7C7AD297AB75600EB9B84 /* AVPlayer+Ding.swift */; };
 		E2C7C7B1297AB98900EB9B84 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2C7C7B0297AB98900EB9B84 /* ding.wav */; };
 		E2D418CE2999FCD8001D336D /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D418CD2999FCD8001D336D /* MeetingTimerView.swift */; };
+		E2D418D1299A3BC2001D336D /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D418D0299A3BC2001D336D /* SpeakerArc.swift */; };
 		E2E061B82988191F00C4E672 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E061B72988191F00C4E672 /* ScrumStore.swift */; };
 		E2E2109F297FA83E00558937 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E2109E297FA83E00558937 /* History.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,8 @@
 		E2C7C7AD297AB75600EB9B84 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		E2C7C7B0297AB98900EB9B84 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		E2D418CD2999FCD8001D336D /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
+		E2D418D0299A3BC2001D336D /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
+		E2D418D2299A6E37001D336D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E2E061B72988191F00C4E672 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 		E2E2109E297FA83E00558937 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,12 +94,12 @@
 		E223F931296C04D700B4CEB7 /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				E2D418D2299A6E37001D336D /* Info.plist */,
+				E2D418CF299A3BA3001D336D /* Styles */,
 				E2C7C7AF297AB7A200EB9B84 /* Resources */,
 				E2BD04D7296EF28C0071D334 /* Views */,
 				E223F940296D5FD200B4CEB7 /* Models */,
 				E223F932296C04D700B4CEB7 /* ScrumdingerApp.swift */,
-				E2C7C7A7297A7BCA00EB9B84 /* ScrumProgressViewStyle.swift */,
-				E2BD04D8296EF2AC0071D334 /* TrailingIconLabelStyle.swift */,
 				E223F936296C04D900B4CEB7 /* Assets.xcassets */,
 				E223F938296C04D900B4CEB7 /* Preview Content */,
 			);
@@ -114,6 +117,7 @@
 		E223F940296D5FD200B4CEB7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E2D418D0299A3BC2001D336D /* SpeakerArc.swift */,
 				E223F941296D5FED00B4CEB7 /* Theme.swift */,
 				E223F943296D93BA00B4CEB7 /* DailyScrum.swift */,
 				E2C7C7A9297A7C9E00EB9B84 /* ScrumTimer.swift */,
@@ -149,6 +153,15 @@
 				E2C7C7B0297AB98900EB9B84 /* ding.wav */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E2D418CF299A3BA3001D336D /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				E2BD04D8296EF2AC0071D334 /* TrailingIconLabelStyle.swift */,
+				E2C7C7A7297A7BCA00EB9B84 /* ScrumProgressViewStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +255,7 @@
 				E223F933296C04D700B4CEB7 /* ScrumdingerApp.swift in Sources */,
 				E2C7C7A22976CC2C00EB9B84 /* ThemeView.swift in Sources */,
 				E223F946296D960C00B4CEB7 /* CardView.swift in Sources */,
+				E2D418D1299A3BC2001D336D /* SpeakerArc.swift in Sources */,
 				E2C7C7AE297AB75600EB9B84 /* AVPlayer+Ding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,7 +388,7 @@
 				DEVELOPMENT_TEAM = 29HK53FZS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Scrumdinger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -384,6 +398,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinovinka.Scrumdinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -403,7 +418,7 @@
 				DEVELOPMENT_TEAM = 29HK53FZS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Scrumdinger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -413,6 +428,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinovinka.Scrumdinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
