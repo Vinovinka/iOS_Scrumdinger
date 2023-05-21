@@ -1,11 +1,15 @@
 import SwiftUI
 
 struct ScrumsView: View {
+
     @Binding var scrums: [DailyScrum]
+
     @Environment(\.scenePhase) private var scenePhase
+
     @State private var isPresentingNewScrumView = false
     @State private var newScrumData = DailyScrum.Data()
-    let saveAction: ()->Void
+
+    let saveAction: ()-> Void
 
     var body: some View {
         List {
@@ -26,25 +30,7 @@ struct ScrumsView: View {
             .accessibilityLabel("New Scrum")
         }
         .sheet(isPresented: $isPresentingNewScrumView) {
-            NavigationView {
-                DetailEditView(data: $newScrumData)
-                    .toolbar {
-                        ToolbarItem(placement: .cancellationAction) {
-                            Button("Dismiss") {
-                                isPresentingNewScrumView = false
-                                newScrumData = DailyScrum.Data()
-                            }
-                        }
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("Add") {
-                                let newScrum = DailyScrum(data: newScrumData)
-                                scrums.append(newScrum)
-                                isPresentingNewScrumView = false
-                                newScrumData = DailyScrum.Data()
-                            }
-                        }
-                    }
-            }
+            NewScrumSheet(scrums: $scrums, isPresentingNewScrumView: $isPresentingNewScrumView)
         }
         .onChange(of: scenePhase) { phase in
             if phase == .inactive { saveAction() }

@@ -5,6 +5,15 @@ struct DailyScrum: Identifiable, Codable {
     var title: String
     var attendees: [Attendee]
     var lengthInMinutes: Int
+    var lengthInMinutesAsDouble: Double {
+        get {
+            Double(lengthInMinutes)
+        }
+        set {
+            lengthInMinutes = Int(newValue)
+        }
+    }
+
     var theme: Theme
     var history: [History] = []
 
@@ -33,6 +42,10 @@ extension DailyScrum {
         var attendees: [Attendee] = []
         var lengthInMinutes: Double = 5
         var theme: Theme = .seafoam
+    }
+
+    static var emptyScrum: DailyScrum {
+        DailyScrum(title: "", attendees: [], lengthInMinutes: 5, theme: .sky)
     }
 
     var data: Data {
