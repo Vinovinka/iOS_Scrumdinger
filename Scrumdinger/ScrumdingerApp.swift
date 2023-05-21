@@ -14,22 +14,22 @@ struct ScrumdingerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                ScrumsView(scrums: $store.scrums) {
-                    Task {
-                        do {
-                            try await ScrumStore.save(scrums: store.scrums)
-                        } catch {
-                            errorWrapper = ErrorWrapper(error: error, guidance: "Try again later.")
-                        }
+            ScrumsView(scrums: $store.scrums) {
+                Task {
+                    do {
+                        try await store.save(scrums: store.scrums)
+                    } catch {
+                        errorWrapper = ErrorWrapper(error: error,
+                                                    guidance: "Try again later.")
                     }
                 }
             }
             .task {
                 do {
-                    store.scrums = try await ScrumStore.load()
+                    try await store.load()
                 } catch {
-                    errorWrapper = ErrorWrapper(error: error, guidance: "Scrumdinger will load sample data and continue.")
+                    errorWrapper = ErrorWrapper(error: error,
+                                                guidance: "Scrumdinger will load sample data and continue.")
                 }
             }
             .sheet(item: $errorWrapper, onDismiss: {

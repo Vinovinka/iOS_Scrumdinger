@@ -57,7 +57,7 @@ struct DetailView: View {
             }
         }
         .sheet(isPresented: $isPresentingEditView) {
-            NavigationView {
+            NavigationStack {
                 DetailEditView(scrum: $scrum)
                     .navigationTitle(scrum.title)
                     .toolbar {

@@ -1,10 +1,3 @@
-//
-//  ErrorWrapper.swift
-//  Scrumdinger
-//
-//  Created by Виктория Виноградова on 07.02.2023.
-//
-
 import Foundation
 
 struct ErrorWrapper: Identifiable {
