@@ -1,10 +1,3 @@
-//
-//  MeetingTimerView.swift
-//  Scrumdinger
-//
-//  Created by Victoria Vinogradova on 13.02.2023.
-//
-
 import SwiftUI
 
 struct MeetingTimerView: View {
