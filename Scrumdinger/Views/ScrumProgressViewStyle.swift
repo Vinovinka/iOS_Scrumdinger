@@ -1,10 +1,3 @@
-//
-//  ScrumProgressViewStyle.swift
-//  Scrumdinger
-//
-//  Created by Виктория Виноградова on 20.01.2023.
-//
-
 import SwiftUI
 
 struct ScrumProgressViewStyle: ProgressViewStyle {
