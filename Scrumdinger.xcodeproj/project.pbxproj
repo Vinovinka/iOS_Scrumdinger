@@ -18,7 +18,7 @@
 		E223F944296D93BA00B4CEB7 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223F943296D93BA00B4CEB7 /* DailyScrum.swift */; };
 		E223F946296D960C00B4CEB7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223F945296D960C00B4CEB7 /* CardView.swift */; };
 		E23E48B52A1D0D2800DAED6E /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23E48B42A1D0D2800DAED6E /* SpeechRecognizer.swift */; };
-		E26AE1FD2A1A0C55002F2E7F /* ScrumdingerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AE1FC2A1A0C55002F2E7F /* ScrumdingerUITests.swift */; };
+		E26AE1FD2A1A0C55002F2E7F /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AE1FC2A1A0C55002F2E7F /* BaseClass.swift */; };
 		E26AE1FF2A1A0C55002F2E7F /* ScrumdingerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AE1FE2A1A0C55002F2E7F /* ScrumdingerUITestsLaunchTests.swift */; };
 		E26AE2062A1A117D002F2E7F /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AE2052A1A117D002F2E7F /* NewScrumSheet.swift */; };
 		E2BD04D9296EF2AC0071D334 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD04D8296EF2AC0071D334 /* TrailingIconLabelStyle.swift */; };
@@ -63,7 +63,7 @@
 		E223F945296D960C00B4CEB7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E23E48B42A1D0D2800DAED6E /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		E26AE1FA2A1A0C55002F2E7F /* ScrumdingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E26AE1FC2A1A0C55002F2E7F /* ScrumdingerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerUITests.swift; sourceTree = "<group>"; };
+		E26AE1FC2A1A0C55002F2E7F /* BaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
 		E26AE1FE2A1A0C55002F2E7F /* ScrumdingerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E26AE2052A1A117D002F2E7F /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		E2BD04D8296EF2AC0071D334 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
@@ -103,6 +103,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E20A968C2A23CA0D0053C83A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E26AE1FE2A1A0C55002F2E7F /* ScrumdingerUITestsLaunchTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E20A968D2A23CA1E0053C83A /* BaseService */ = {
+			isa = PBXGroup;
+			children = (
+				E26AE1FC2A1A0C55002F2E7F /* BaseClass.swift */,
+			);
+			path = BaseService;
+			sourceTree = "<group>";
+		};
+		E20A968E2A23CA2B0053C83A /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
 		E223F926296C04D700B4CEB7 = {
 			isa = PBXGroup;
 			children = (
@@ -162,8 +185,9 @@
 		E26AE1FB2A1A0C55002F2E7F /* ScrumdingerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E26AE1FC2A1A0C55002F2E7F /* ScrumdingerUITests.swift */,
-				E26AE1FE2A1A0C55002F2E7F /* ScrumdingerUITestsLaunchTests.swift */,
+				E20A968E2A23CA2B0053C83A /* Steps */,
+				E20A968D2A23CA1E0053C83A /* BaseService */,
+				E20A968C2A23CA0D0053C83A /* Tests */,
 			);
 			path = ScrumdingerUITests;
 			sourceTree = "<group>";
@@ -332,7 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E26AE1FF2A1A0C55002F2E7F /* ScrumdingerUITestsLaunchTests.swift in Sources */,
-				E26AE1FD2A1A0C55002F2E7F /* ScrumdingerUITests.swift in Sources */,
+				E26AE1FD2A1A0C55002F2E7F /* BaseClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
